@@ -6,7 +6,13 @@ package com.colegiomagico.reto4;
 public class DefensaCondicional {
 
     public static String evaluar(String hechizo) {
-        return ""; // TODO: Cambia esto
+
+        if (hechizo.equals("Imperius") || hechizo.equals("Crucio")) {
+            return "Ese hechizo es una maldición";
+        } else {
+            return "Hechizo permitido";
+        }
+
     }
 
     public static void main(String[] args) {
